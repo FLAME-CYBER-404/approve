@@ -1,5 +1,14 @@
-import os, sys
+import os, platform
 try:
-    __import__("paid").bnsbuy()
-except Exception as e:
-    exit(str(e))
+    import requests
+except:
+    os.system('pip install requests')
+os.system('git pull')
+import requests
+bit = platform.architecture()[0]
+if bit == '64bit':
+    from ALLOPARATOR_dec import main_apv
+    main_apv()
+elif bit == '32bit':
+    print("\x1b[1;91mOpps Sorry Brother Your Mobile Not Support This Tools")
+ 
