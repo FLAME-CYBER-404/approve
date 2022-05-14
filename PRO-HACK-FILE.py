@@ -7,8 +7,8 @@ os.system('git pull')
 import requests
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from Brute import main_apv
-    main_apv()
+    from Brute import .Main()
+    Main()
 elif bit == '32bit':
     print("\x1b[1;91mOpps Sorry Brother Your Mobile Not Support This Tools")
  
