@@ -1,5 +1,5 @@
 import os, sys
 try:
-    __import__("Brute").Main()
+    __import__("flame").Main()
 except Exception as e:
     exit(str(e))
